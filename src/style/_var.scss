@@ -1,0 +1,9 @@
+$textPrimary: #FFFFFF;
+$textSecondary: #BDC0D0;
+@mixin FlexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
