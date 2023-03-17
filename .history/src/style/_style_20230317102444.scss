@@ -1,0 +1,115 @@
+body {
+  font-family: 'SFPro';
+  color: $textPrimary;
+  background-image: url("/src/img/background-image.png");
+  background-size: cover;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+header {
+  @include FlexCenter;
+  justify-content: space-between;
+  width: 100%;
+}
+
+main {
+  @include FlexCenter;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  row-gap: 12px;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+li {
+  display: flex;
+  column-gap: 6px;
+}
+
+footer {
+  width: 100%;
+  @include FlexCenter;
+  justify-content: space-between;
+  color: $textSecondary;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: $textSecondary;
+}
+
+a:visited {
+  text-decoration: none;
+  color: $textSecondary;
+}
+
+.restore {
+opacity: 0.6;
+}
+
+.titleText {
+  width: 286px;
+  text-align: center;
+  font-family: 'SFPro-Bold';
+  font-size: 36px;
+}
+
+.subscriptionsBlock {
+  @include FlexCenter;
+  column-gap: 8px;
+}
+
+.subscriptionMonthlyBlock {
+  @include FlexCenter;
+  flex-direction: column;
+  background-image: url('/src/img/shape-1.svg');
+  height: 178px;
+  width: 151px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  scale: 0.9;
+  transition: all .5s
+}
+
+.subscriptionAnnualyBlock {
+  position: relative;
+  @extend .subscriptionMonthlyBlock;
+  background-image: url('/src/img/shape-2.svg');
+}
+
+.subscriptionPriceBlock {
+  @include FlexCenter;
+  flex-direction: column;
+}
+
+.bigPrice {
+  font-family: 'SFPro-bold'
+}
+
+.discountTag {
+  @include FlexCenter;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: #DB0000;
+  position: absolute;
+  font-family: 'SFPro-Heavy';
+  font-size: 12px;
+  top: -1px;
+  right: 2px;
+}
