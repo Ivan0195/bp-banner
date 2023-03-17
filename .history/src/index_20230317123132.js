@@ -4,7 +4,7 @@ import './index.scss';
 const month = document.getElementById('month');
 const year = document.getElementById('year');
 const button = document.getElementById('button');
-button.action = '#';
+button.ariaDisabled = true;
 
 const onElementSelect = (element, target, link) => {
     element.style.scale = 0.9;
