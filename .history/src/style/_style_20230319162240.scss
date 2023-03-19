@@ -17,8 +17,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: calc(100vw - 40px);
-  padding-top: 40px;
+  width: 100%;
+  padding: 40px 0 20px 29;
 }
 
 main {
@@ -51,8 +51,6 @@ footer {
   justify-content: space-between;
   color: $textSecondary;
   text-decoration: underline;
-  width: calc(100vw - 40px);
-  padding-bottom: 40px;
 }
 
 a {

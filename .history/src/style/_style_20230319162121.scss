@@ -3,13 +3,12 @@ body {
   color: $textPrimary;
   background-image: url("/src/img/background-image.png");
   background-size: cover;
-  padding: 0;
-  margin: 0;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box;
+  box-sizing: content-box;
   height: 100vh;
 }
 
@@ -17,8 +16,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: calc(100vw - 40px);
-  padding-top: 40px;
+  width: 100%;
 }
 
 main {
@@ -51,8 +49,6 @@ footer {
   justify-content: space-between;
   color: $textSecondary;
   text-decoration: underline;
-  width: calc(100vw - 40px);
-  padding-bottom: 40px;
 }
 
 a {

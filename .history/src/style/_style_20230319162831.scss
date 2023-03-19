@@ -17,7 +17,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: calc(100vw - 40px);
+  width: 90%;
   padding-top: 40px;
 }
 
@@ -51,7 +51,7 @@ footer {
   justify-content: space-between;
   color: $textSecondary;
   text-decoration: underline;
-  width: calc(100vw - 40px);
+  width: calc();
   padding-bottom: 40px;
 }
 
