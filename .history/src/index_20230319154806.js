@@ -80,5 +80,5 @@ if (language === 'fr') {
 }
 
 if (language !== 'en' || 'zh') {
-    title.style.fontSize = '30px'
+    title.style.fontSize = '28px'
 }

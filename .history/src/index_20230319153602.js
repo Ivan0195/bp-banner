@@ -24,11 +24,9 @@ const onElementSelect = (element, target, link) => {
 month.onclick = () => onElementSelect(year, month, 'https://apple.com/');
 year.onclick = () => onElementSelect(month, year, 'https://google.com/ ');
 
-const language =
-    !(window.location.href.slice(-2) === 'es' || 'es' || 'fr' || 'ja' || 'nl' || 'ru' || 'zh')
-        ? 'en'
-        : window.location.href.slice(-2);
-
+const language = window.location.href.slice(-2) !== 'es' || 'es' || 'fr' || 'ja' || 'nl '
+? 'en'
+: window.location.href.slice(-2);
 const localization = require(`/src/localization/${language}.json`)
 
 const restore = document.getElementById('restore');
@@ -77,8 +75,4 @@ if (language === 'ru') {
 if (language === 'fr') {
     mostPopular.style.fontSize = '14px'
     threeDaysFree.style.fontSize = '14px'
-}
-
-if (language !== 'en' || 'zh') {
-    title.style.fontSize = '30px'
 }
