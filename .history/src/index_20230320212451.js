@@ -15,7 +15,7 @@ if (!window.location.href.includes('?')) {
 const month = document.getElementById('month');
 const year = document.getElementById('year');
 const button = document.getElementById('button');
-button.action = 'https://apple.com/';
+button.action = '#';
 
 const onElementSelect = (element, target, link) => {
     element.style.scale = 0.9;
@@ -74,10 +74,7 @@ terms.innerHTML = localization["Terms of Use"];
 privacy.innerHTML = localization["Privacy Policy"];
 
 if (language === 'ru') {
-    title.style.fontSize = '27px'
-    unlimDocs.fontSize = '9px'
-    exportToClouds.fontSize = '9px'
-    textRecog.fontSize = '10px'
+    title.style.fontSize = '32px'
     threeDaysFree.style.fontSize = '14px'
 }
 
@@ -87,5 +84,5 @@ if (language === 'fr') {
 }
 
 if (language !== 'en' || 'zh') {
-    title.style.fontSize = '28px'
+    title.style.fontSize = '30px'
 }

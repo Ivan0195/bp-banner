@@ -2,11 +2,9 @@ import './index.html';
 import './index.scss';
 
 
-let currentLanguage = window.navigator.language.slice(0, 2);
+const currentLanguage = window.navigator.language.slice(0, 2);
 
-if (!(['en', 'es', 'fr', 'ja', 'nl', 'ru', 'zh'].includes(currentLanguage))) {
-    currentLanguage = 'en'
-}
+if(){}
 
 if (!window.location.href.includes('?')) {
     window.history.replaceState(null, null, `?lang=${currentLanguage}`);
@@ -15,7 +13,7 @@ if (!window.location.href.includes('?')) {
 const month = document.getElementById('month');
 const year = document.getElementById('year');
 const button = document.getElementById('button');
-button.action = 'https://apple.com/';
+button.action = '#';
 
 const onElementSelect = (element, target, link) => {
     element.style.scale = 0.9;
@@ -29,9 +27,9 @@ month.onclick = () => onElementSelect(year, month, 'https://apple.com/');
 year.onclick = () => onElementSelect(month, year, 'https://google.com/ ');
 
 const language =
-    ['en', 'es', 'fr', 'ja', 'nl', 'ru', 'zh'].includes(window.location.href.slice(-2))
-        ? window.location.href.slice(-2)
-        : 'en';
+    !(window.location.href.slice(-2) === 'es' || 'es' || 'fr' || 'ja' || 'nl' || 'ru' || 'zh')
+        ? 'en'
+        : window.location.href.slice(-2);
 
 const localization = require(`/src/localization/${language}.json`)
 
@@ -74,10 +72,7 @@ terms.innerHTML = localization["Terms of Use"];
 privacy.innerHTML = localization["Privacy Policy"];
 
 if (language === 'ru') {
-    title.style.fontSize = '27px'
-    unlimDocs.fontSize = '9px'
-    exportToClouds.fontSize = '9px'
-    textRecog.fontSize = '10px'
+    title.style.fontSize = '32px'
     threeDaysFree.style.fontSize = '14px'
 }
 
@@ -87,5 +82,5 @@ if (language === 'fr') {
 }
 
 if (language !== 'en' || 'zh') {
-    title.style.fontSize = '28px'
+    title.style.fontSize = '30px'
 }

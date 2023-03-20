@@ -3,11 +3,8 @@ body {
   color: $textPrimary;
   background-image: url("/src/img/4.png");
   @media (min-resolution: 2dppx) {
-    background-image: url("/src/img/4@2x.png");
-  }
-  @media (min-resolution: 3dppx) {
-    background-image: url("/src/img/4@3x.png");
-  }
+      background-image: url("/src/img/4.png");
+    }
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -34,9 +31,6 @@ main {
   flex-direction: column;
   height: 100%;
   row-gap: 8px;
-  @media(height < 668px) {
-    row-gap: 6px;
-  }
   padding-bottom: 16px;
 }
 

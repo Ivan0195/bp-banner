@@ -74,10 +74,9 @@ terms.innerHTML = localization["Terms of Use"];
 privacy.innerHTML = localization["Privacy Policy"];
 
 if (language === 'ru') {
-    title.style.fontSize = '27px'
-    unlimDocs.fontSize = '9px'
-    exportToClouds.fontSize = '9px'
-    textRecog.fontSize = '10px'
+    title.style.fontSize = '30px'
+    unlimDocs.fontSize = '10px'
+    unlimDocs.fontSize = '10px'
     threeDaysFree.style.fontSize = '14px'
 }
 

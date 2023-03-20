@@ -1,13 +1,7 @@
 body {
   font-family: 'SFPro';
   color: $textPrimary;
-  background-image: url("/src/img/4.png");
-  @media (min-resolution: 2dppx) {
-    background-image: url("/src/img/4@2x.png");
-  }
-  @media (min-resolution: 3dppx) {
-    background-image: url("/src/img/4@3x.png");
-  }
+  background-image: url("/src/img/background-image.png");
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -34,9 +28,6 @@ main {
   flex-direction: column;
   height: 100%;
   row-gap: 8px;
-  @media(height < 668px) {
-    row-gap: 6px;
-  }
   padding-bottom: 16px;
 }
 
@@ -106,6 +97,7 @@ opacity: 0.6;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
+  scale: 0.9;
   transition: all .5s
 }
 
@@ -113,8 +105,6 @@ opacity: 0.6;
   position: relative;
   @extend .subscriptionMonthlyBlock;
   background-image: url('/src/img/shape-2.svg');
-  scale: 0.9;
-  opacity: 0.5;
 }
 
 .subscriptionPriceBlock {
